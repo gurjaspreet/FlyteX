@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - FlyteX</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+             * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0;
+            }
+
+            .navbar {
+                background-color: #333;
+                color: #fff;
+                padding: 10px 0;
+                width: 100%;
+            }
+
+            .nav-container {
+                width: 80%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .navbar-logo img {
+                height: 60px;
+                width: 90px;
+            }
+
+            .navbar-links {
+                list-style-type: none;
+                display: flex;
+            }
+
+            .navbar-links li {
+                margin-left: 20px;
+            }
+
+            .navbar-links li a {
+                text-decoration: none;
+                color: #fff;
+                padding: 10px;
+                transition: background 0.3s, color 0.3s;
+            }
+
+            .navbar-links li a:hover {
+                background-color: #575757;
+                color: #fff;
+            }
+
+            .contact-section {
+                padding: 50px 0;
+                background-color: #fff;
+                text-align: center;
+            }
+
+            .contact-section .container {
+                width: 60%;
+                margin: auto;
+                background-color: #f9f9f9;
+                padding: 30px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+            }
+
+            .contact-section h2 {
+                margin-bottom: 20px;
+                font-size: 2em;
+                color: #333;
+            }
+
+            .contact-section p {
+                margin-bottom: 30px;
+                color: #666;
+            }
+
+            .contact-section form {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .contact-section label {
+                margin-bottom: 10px;
+                font-weight: bold;
+                color: #333;
+            }
+
+            .contact-section input,
+            .contact-section textarea {
+                margin-bottom: 20px;
+                padding: 15px;
+                font-size: 1em;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                width: 100%;
+            }
+
+            .contact-section button {
+                padding: 15px;
+                font-size: 1.2em;
+                background-color: #4CAF50;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background 0.3s;
+            }
+
+            .contact-section button:hover {
+                background-color: #45a049;
+            }
+
+            .footer {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 20px 0;
+            }
+
+            .footer .container {
+                width: 80%;
+                margin: auto;
+            }
+
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" style="background-color: #333; color: #fff; padding: 10px 0;">
+        <div class="nav-container" style="width: 80%; display: flex; justify-content: space-between; align-items: center;">
+            <a href="/" class="navbar-logo"><img width="80px" src="static/img/logo.jpeg" alt="FlyteX Logo"></a>
+            <ul class="navbar-links" style="list-style-type: none; padding: 0; display: flex;">
+                <li style="margin-left: 20px;"><a href="/" style="text-decoration: none; color: #fff;">Home</a></li>
+                <li style="margin-left: 20px;"><a href="/predict_price" style="text-decoration: none; color: #fff;">Price Predictor</a></li>
+                <li style="margin-left: 20px;"><a href="/bookings" style="text-decoration: none; color: #fff;">Flight Bookings</a></li>
+                <li style="margin-left: 20px;"><a href="/contact_us" style="text-decoration: none; color: #fff;">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Us Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have any questions or concerns? Reach out to us!</p>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 FlyteX. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

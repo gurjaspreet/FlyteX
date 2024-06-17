@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Destinations - FlyteX</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        .nav-container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-logo img {
+            height: 60px;
+            width: 90px;
+        }
+
+        .navbar-links {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar-links li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .navbar-links li a:hover {
+            background-color: #575757;
+            color: #fff;
+        }
+
+        .accordion-section {
+            padding: 20px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .accordion-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding-bottom: 10px;
+        }
+
+        .accordion {
+            background-color: #f9f9f9;
+            color: #333;
+            cursor: pointer;
+            padding: 18px;
+            width: 300px;
+            height: 300px;
+            border: none;
+            text-align: center;
+            outline: none;
+            font-size: 18px;
+            transition: 0.4s;
+            flex-shrink: 0;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            transform: scale(0.75);
+            transition: transform 0.4s ease;
+        }
+
+        .accordion img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .accordion.active {
+            transform: scale(1.25);
+            z-index: 1;
+        }
+
+        .card-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 300px;
+            margin: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+        .card button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+
+        .card button:hover {
+            background-color: #45a049;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="navbar-logo"><img width="80px" src="static/img/logo.jpeg" alt="FlyteX Logo"></a>
+            <ul class="navbar-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/predict_price">Price Predictor</a></li>
+                <li><a href="/bookings">Flight Bookings</a></li>
+                <li><a href="/contact_us">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Accordion Section -->
+    <section class="accordion-section">
+        <div class="accordion-container">
+            <button class="accordion active"><img src="https://hips.hearstapps.com/hmg-prod/images/pena-national-palace-sintra-portugal-royalty-free-image-1712583229.jpg?crop=1xw:0.99956xh;center,top&resize=980:*" alt="Destination 1"></button>
+            <!-- <button class="accordion"><img src="https://hips.hearstapps.com/hmg-prod/images/the-ancient-oshino-hakkai-village-with-mt-fuji-in-royalty-free-image-1712584079.jpg?crop=0.447xw:1.00xh;0.216xw,0&resize=980:*" alt="Destination 2"></button> -->
+            <button class="accordion"><img src="https://hips.hearstapps.com/hmg-prod/images/kuang-si-waterfall-royalty-free-image-1693283318.jpg?crop=0.99882xw:1xh;center,top&resize=980:*" alt="Destination 3"></button>
+            <button class="accordion"><img src="https://hips.hearstapps.com/hmg-prod/images/city-in-the-valley-beautiful-with-light-coming-royalty-free-image-1693419513.jpg?crop=0.447xw:1.00xh;0.0850xw,0&resize=980:*" alt="Destination 4"></button>
+            <button class="accordion"><img src="https://hips.hearstapps.com/hmg-prod/images/fairytale-town-of-hallstatt-austria-royalty-free-image-1570204697.jpg?crop=0.447xw:1.00xh;0.211xw,0&resize=980:*" alt="Destination 5"></button>
+            <!-- <button class="accordion"><img src="https://hips.hearstapps.com/hbu.h-cdn.co/assets/17/23/bagan-burma.jpg?crop=1xw:0.9998233839632639xh;center,top&resize=980:*" alt="Destination 6"></button> -->
+        </div>
+    </section>
+
+    <!-- Grid of Cards -->
+    <section class="card-section">
+        <div class="card">
+            <img src="https://hips.hearstapps.com/hbu.h-cdn.co/assets/17/23/bagan-burma.jpg?crop=1xw:0.9998233839632639xh;center,top&resize=980:*" alt="Destination 1" class="card-img">
+            <div class="container">
+                <h4><b>Bagan</b></h4>
+                <p>Myanmar</p>
+                <button>Book</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/view-of-the-town-of-positano-with-flowers-royalty-free-image-1675789685.jpg?crop=0.448xw:1.00xh;0.226xw,0&resize=980:*" alt="Destination 2" class="card-img">
+            <div class="container">
+                <h4><b>Amalfi Coast</b></h4>
+                <p>Italy</p>
+                <button>Book</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/el-pailon-del-diablo-banos-ecuador-royalty-free-image-1570205205.jpg?crop=0.849xw:1.00xh;0.0544xw,0&resize=980:*" alt="Destination 3" class="card-img">
+            <div class="container">
+                <h4><b>Pailón del Diablo</b></h4>
+                <p>Ecuador</p>
+                <button>Book</button>
+            </div>
+        </div>
+        <!-- Add more cards for other destinations -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 FlyteX. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var currentIndex = 0;
+
+        function highlightAccordion() {
+            // Remove 'active' class from all buttons
+            for (var i = 0; i < acc.length; i++) {
+                acc[i].classList.remove("active");
+            }
+            // Add 'active' class to the current button
+            acc[currentIndex].classList.add("active");
+            // Update the index for the next highlight
+            currentIndex = (currentIndex + 1) % acc.length;
+        }
+
+        // Initial highlight
+        highlightAccordion();
+
+        // Highlight a new button every 4 seconds
+        setInterval(highlightAccordion, 4000);
+    </script>
+</body>
+
+</html>

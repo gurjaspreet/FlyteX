@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyteX</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('ss.png');
+        }
+
+        main {
+            background: linear-gradient(to right, rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Introductory Section styles */
+        .intro-section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .intro-section h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .intro-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .intro-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* FAQs Section styles */
+        .faqs-section {
+            padding: 50px 0;
+        }
+
+        .faq {
+            margin-bottom: 30px;
+        }
+
+        .faq h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .faq ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .faq ul li {
+            margin-bottom: 25px;
+        }
+
+        /* Footer styles */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" style="background-color: #333; color: #fff; padding: 10px 0;">
+        <div class="nav-container" style="width: 80%; margin: auto; display: flex; justify-content: space-between; align-items: center;">
+            <a href="/" class="navbar-logo"><img width="80px" src="static/img/logo.jpeg" alt="FlyteX Logo"></a>
+            <ul class="navbar-links" style="list-style-type: none; margin: 0; padding: 0; display: flex;">
+                <li style="margin-left: 20px;"><a href="/" style="text-decoration: none; color: #fff;">Home</a></li>
+                <li style="margin-left: 20px;"><a href="/predict_price" style="text-decoration: none; color: #fff;">Price Predictor</a></li>
+                <li style="margin-left: 20px;"><a href="/bookings" style="text-decoration: none; color: #fff;">Flight Bookings</a></li>
+                <li style="margin-left: 20px;"><a href="/contact_us" style="text-decoration: none; color: #fff;">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Introductory Section -->
+        <section class="intro-section">
+            <div class="container">
+                <h1>FlyteX</h1>
+                <div>
+                    <p style="width: 950px; text-align: justify;">The aviation industry has witnessed a significant increase in the number of travelers over the years, leading to a surge in demand for efficient flight booking platforms. Traditional flight booking systems often lack personalized recommendations and real-time pricing information, resulting in suboptimal choices for users.
+                    In response to this, the proposed project aims to develop FlyteX, a Flight Booking Web Application that utilizes predictive algorithms to recommend flights based on user preferences and predicts future prices for enhanced decision-making.</p>
+                    <p><img style="margin-bottom: 0;" width="400px" src="https://media1.tenor.com/m/MBjigeDsH_sAAAAC/trip-vacation-mode.gif" alt="Flight Booking"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQs Section -->
+        <section class="faqs-section">
+            <div class="container">
+                <h2 style="margin-bottom: 30px;">Frequently Asked Questions</h2>
+                <div class="faq">
+                    <ul>
+                        <li><strong>Price Variation with Airlines:</strong> To analyze the variation in ticket prices based on
+                                airlines...</li>
+                        <li><strong>Impact of Booking Time on Ticket Price:</strong> To assess how ticket prices are affected
+                            when tickets are bought closer to the departure date...</li>
+                        <li><strong>Ticket Price Variation based on Departure and Arrival Time:</strong> To investigate whether
+                            ticket prices vary based on the departure and arrival times of flights...</li>
+                        <li><strong>Price Changes with Source and Destination:</strong> To examine how ticket prices change
+                            with changes in the source and destination cities...</li>
+                        <li><strong>Ticket Price Variation between Economy and Business Class:</strong> To compare ticket prices
+                            between economy and business class...</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 FlyteX. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
